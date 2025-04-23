@@ -1,10 +1,14 @@
-# Parámetros
+#numeros aleatorios de notas 
+rm(list = ls())
+set.seed(as.numeric(Sys.time()))
+#numero de estudiantes
 n <- 20
 
-# Generación de notas (aleatorias entre 0 y 20)
+# Generación de notas 
 notas <- round(runif(n, min = 0, max = 20), 1)
+print(notas)
 
-# Visualización de las notas
+# Grafico
 plot(notas,
      type = "o",
      col = "black",
@@ -14,7 +18,6 @@ plot(notas,
      main = "Notas Aleatorias de Estudiantes",
      ylim = c(0, 20))
 
-# Añadir etiquetas de notas en el gráfico
 text(x = 1:n, y = notas + 1, labels = notas, col = "purple")
 
 
