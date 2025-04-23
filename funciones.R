@@ -1,6 +1,5 @@
 # Parámetros
-set.seed(7)  # Semilla para reproducibilidad
-n <- 10      # Número de estudiantes
+n <- 20
 
 # Generación de notas (aleatorias entre 0 y 20)
 notas <- round(runif(n, min = 0, max = 20), 1)
